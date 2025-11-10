@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is My Portfolio Website As an Web Developer">
+  <title>Kishan Solanki | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+          <span class="k-letter">K</span><span class="rest">ishan.</span>
+        </div>
+      
+        <!-- Hamburger Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">
+          &#9776;
+        </div>
+      
+        <!-- Navigation Links -->
+        <nav class="nav-links" id="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      
+      
+
+      
+      <div class="hero" id="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="tagline">Web Developer</p>
+            <h1>Hi, I'm <span class="highlight">Kishan</span></h1>
+            <h2>From Gujarat, India</h2>
+          </div>
+          <div class="hero-img">
+            <img src="kishan1.jpg" alt="Kishan Solanki photo" />
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <!-- Left Side Image -->
+          <div class="about-image">
+            <img src="dev.jpg" alt="Kishan" />
+          </div>
+      
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              I'm a well-experienced Web Developer from Gujarat, India. I recently completed my BCA from Shri D.N. Institute of Computer Application, affiliated to Sardar Patel University, Vallabh Vidyanagar with a CGPA of 9.0. I'm passionate about crafting clean, user-centric web experiences and have developed multiple freelance projects for clients and classmates.
+            </p>
+          
+            <!-- Tabs -->
+            <div class="tabs">
+              <button class="tab active" data-tab="skills">Skills</button>
+              <button class="tab" data-tab="experience">Experience</button>
+              <button class="tab" data-tab="education">Education</button>
+            </div>
+          
+            <!-- Tab Content: Skills -->
+            <div class="tab-content active" id="skills">
+              <h4>Frontend Development</h4>
+              <p>Advanced HTML, CSS, JavaScript</p>
+              <h4>Backend Development</h4>
+              <p>PHP, ASP.NET (C#), Microsoft SQL Server, MySQL</p>
+              <h4>Project Building</h4>
+              <p>Online Election Voting System, Freelance Projects</p>
+              <h4>Other</h4>
+              <p>Basic Data Structures in C++</p>
+            </div>
+          
+            <!-- Tab Content: Experience -->
+            <div class="tab-content" id="experience">
+              <h4>Major Project</h4>
+              <p>Developed "Online Election Voting Website" using ASP.NET (C#) and SQL Server for secure MLA election voting in Gujarat.</p>
+              <h4>Freelance Developer</h4>
+              <p>Created 7-8 projects for classmates and clients, charging fees for project development and delivery.</p>
+            </div>
+          
+            <!-- Tab Content: Education -->
+            <div class="tab-content" id="education">
+              <h4>BCA - Shri D.N. Institute of Computer Application</h4>
+              <p>SP University, Vallabh Vidyanagar | CGPA: 9.0 | Graduated: 2025</p>
+              <h4>12th Commerce</h4>
+              <p>Gujarat State Board | Score: 84%</p>
+              <h4>10th Standard</h4>
+              <p>Gujarat State Board | Score: 70%</p>
+            </div>
+          </div>
+          
+      </section>
+      
+
+<!-- ===== Services Section ===== -->
+<section class="services" id="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-container">
+    
+    <!-- Service Card -->
+    <div class="service-card" data-title="Web Development" data-detail="I create fast, secure and responsive websites using HTML, CSS, JS, PHP and MySQL. My focus is always clean code and optimized performance.">
+      <div class="service-icon"><i class="fas fa-code"></i></div>
+      <h3>Web Development</h3>
+      <p>I build responsive and powerful websites using modern tech.</p>
+      <span class="learn-more">Learn More →</span>
+    </div>
+
+    <div class="service-card" data-title="Responsive UI/UX" data-detail="I design clean, minimal and modern interfaces that adapt beautifully across all devices. User experience is at the core of my process.">
+      <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Responsive UI/UX</h3>
+      <p>Design user-friendly interfaces for all screen sizes.</p>
+      <span class="learn-more">Learn More →</span>
+    </div>
+
+    <div class="service-card" data-title="Project Development" data-detail="I’ve created large-scale applications like an Online Voting System using C#, ASP.NET, SQL Server, and also built backend logic and frontend UI.">
+      <div class="service-icon"><i class="fas fa-database"></i></div>
+      <h3>Project Development</h3>
+      <p>Handled real-world projects using full-stack tech.</p>
+      <span class="learn-more">Learn More →</span>
+    </div>
+
+    <div class="service-card" data-title="Freelancing Services" data-detail="Delivered 7+ successful freelance projects to classmates and local clients with great feedback. Custom design and full deployment included.">
+      <div class="service-icon"><i class="fas fa-handshake"></i></div>
+      <h3>Freelancing Services</h3>
+      <p>Delivered 7+ custom projects to happy clients.</p>
+      <span class="learn-more">Learn More →</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Modal Popup ===== -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-header">
+    <h2>My Work</h2>
+  </div>
+
+  <div class="portfolio-grid">
+    <!-- First 4 Projects (Always Visible) -->
+    <div class="project">
+      <img src="election.jpg" alt="Online Election Voting Website">
+      <div class="overlay">
+        <h3>Online Election Voting</h3>
+        <p>Vote online for Gujarat MLA elections.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="tour.jfif" alt="Tour and Travel">
+      <div class="overlay">
+        <h3>Tour & Travel</h3>
+        <p>Book trips and travel packages online.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="attendance.jfif" alt="Attendance Management">
+      <div class="overlay">
+        <h3>Attendance System</h3>
+        <p>Manage college attendance online.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="Hostel.jfif" alt="Hostel Management">
+      <div class="overlay">
+        <h3>Hostel Management</h3>
+        <p>Room and student management system.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <!-- Hidden Projects -->
+    <div class="project hidden">
+      <img src="laptop.jpg" alt="Laptop Shop">
+      <div class="overlay">
+        <h3>Online Laptop Shop</h3>
+        <p>Buy laptops online with categories.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project hidden">
+      <img src="compAss.jfif" alt="Computer Accessories">
+      <div class="overlay">
+        <h3>Computer Accessories</h3>
+        <p>Peripherals and gadgets shopping site.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project hidden">
+      <img src="namkeen.jfif" alt="Namkeen Shop">
+      <div class="overlay">
+        <h3>Namkeen Shop</h3>
+        <p>Order snacks and namkeen online.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+    <div class="project hidden">
+      <img src="book.jfif" alt="Book Selling System">
+      <div class="overlay">
+        <h3>Book Selling System</h3>
+        <p>Online platform to buy books.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="see-more-btn">
+    <button class="btn" id="seeMoreBtn">See More</button>
+  </div>
+</section>
+
+
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-paper-plane"></i> kishan104.solanki@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9662347518</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/kishan__2005_/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/KishanSola104">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/kishan__2005_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kishankumar-solanki-01691835b/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="Kishan_Solanki_Resume.pdf" download class="btn cv-btn"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+    <form class="contact-form" id="contactForm" action="https://formsubmit.co/kishan104.solanki@gmail.com" method="POST" target="hidden_iframe" onsubmit="return showSuccessMessage()">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  
+    <!-- Success Message (initially hidden) -->
+    <div id="successMessage" style="display:none; color: green; margin-top: 15px;">
+      ✅ Message sent successfully!
+    </div>
+  
+    <!-- Invisible iframe to avoid page reload -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+    
+  </div>
+</section>
+
+
+
+    
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Kishan Solanki . All rights reserved.</p>
+       
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
